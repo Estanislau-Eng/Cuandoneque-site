@@ -1,0 +1,89 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: rgb(7, 1, 22);
+    font-family: arial, sans-serif;
+    margin: 0;
+    font: 12pt normal arial;
+    padding-top: -10px;
+    padding-bottom: 50px;
+    flex: 1;
+}
+
+.whatsapp-solicitacao a img {
+    width: 50px;
+    transition: transform o, 3s ease;
+}
+
+.whatsapp-solicitacao a img:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp-solicitacao a {
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(7, 1, 22);
+    transition: 0.3s;
+}
+
+.whatsapp-solicitacao a:hover {
+    color: yellow;
+    transform: scale(1.2);
+}
+
+.servicos-container {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.servicos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servico {
+    background-color: white;
+    padding: 20px;
+    max-width: 200px;
+    margin-bottom: 20px;
+    border-left: 6px solid #ffcc00;
+    box-shadow: 0 0 10px;
+}
+
+.servico:hover {
+    transform: scale(1.2);
+}
+
+.servico button a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+.servico button {
+    background-color: rgb(7, 1, 22);
+    padding: 10px;
+    border-radius: 8px solid #0000;
+}
+
+.rodape {
+    padding-d bottom: 0;
+    width: 100%;
+    background-color: rgba(7, 1, 22, 0.998);
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    z-index: 1000;
+    margin-top: auto;
+}
