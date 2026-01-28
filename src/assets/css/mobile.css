@@ -12,6 +12,7 @@
     .menu-toggle {
         display: flex;
         z-index: 10000;
+        pointer-events: auto;
     }
     .menu {
         position: fixed;
@@ -27,9 +28,11 @@
         border-radius: 8px;
         z-index: 9999;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        pointer-events: none;
     }
     .menu.active {
         max-height: 300px;
+        pointer-events: auto;
     }
     .menu ul {
         flex-direction: column;
