@@ -8,7 +8,7 @@
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
-        z-index: 1001;
+        z-index: 10000;
     }
     .menu {
         position: fixed;
@@ -22,7 +22,7 @@
         overflow: hidden;
         transition: max-height 0.3s ease;
         border-radius: 8px;
-        z-index: 999;
+        z-index: 9999;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
     .menu.active {
@@ -54,11 +54,13 @@
     }
     .imagem {
         max-height: none;
+        z-index: 1;
     }
     .imagem img {
         max-width: 100%;
         height: auto;
         transform: scale(1) !important;
+        z-index: 1;
     }
     .apresent {
         max-height: none;
