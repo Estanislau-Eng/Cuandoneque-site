@@ -31,7 +31,7 @@
         pointer-events: none;
     }
     .menu.active {
-        max-height: 300px;
+        max-height: 500px;
         pointer-events: auto;
     }
     .menu ul {
