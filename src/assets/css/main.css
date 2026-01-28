@@ -123,7 +123,7 @@ body {
 .conteudo {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 40px;
     padding: 40px 20px;
     max-width: 1400px;
@@ -133,13 +133,14 @@ body {
 
 .imagem {
     flex: 1;
-    min-width: 300px;
+    min-width: 350px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .imagem img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -153,7 +154,9 @@ body {
 
 .apresent {
     flex: 1;
-    min-width: 300px;
+    min-width: 350px;
+    display: flex;
+    align-items: center;
 }
 
 .part2 {
@@ -163,6 +166,7 @@ body {
     color: var(--color-light);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 
 .part2 h1 {
@@ -182,7 +186,7 @@ body {
 
 .part2 button {
     background-color: var(--color-accent);
-    color: var(--color-text);
+    color: var(--color-dark);
     padding: 14px 30px;
     border: none;
     border-radius: var(--border-radius);
@@ -216,7 +220,7 @@ body {
 
 .blc1,
 .blc2 {
-    background: linear-gradient(135deg, var(--color-grey), rgba(183, 181, 181, 0.25));
+    background: var(--color-light);
     padding: 35px;
     font-family: arial, sans-serif;
     color: var(--color-text);
@@ -236,7 +240,7 @@ body {
 
 .blc1 h2,
 .blc2 h2 {
-    color: var(--color-accent);
+    color: var(--color-dark);
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 20px;
@@ -247,7 +251,7 @@ body {
 .blc1 p,
 .blc2 p {
     line-height: 1.8;
-    color: var(--color-text);
+    color: #333;
     margin-bottom: 12px;
 }
 
@@ -283,20 +287,21 @@ body {
 .formulario {
     flex: 1;
     min-width: 300px;
-    background: linear-gradient(135deg, var(--color-grey), rgba(183, 181, 181, 0.25));
-    padding: 35px;
+    background: var(--color-light);
+    padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid var(--color-accent);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--color-dark);
 }
 
 .formulario h2 {
-    color: var(--color-accent);
+    color: var(--color-dark);
     text-align: center;
     margin-top: 0;
     margin-bottom: 25px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 20px;
 }
 
 .formulario form {
@@ -304,28 +309,38 @@ body {
     flex-direction: column;
 }
 
+.formulario label {
+    color: var(--color-dark);
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
 .formulario input,
 .formulario select {
     padding: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     border-radius: var(--border-radius);
     border: 2px solid #ddd;
     font-size: 14px;
     font-family: arial, sans-serif;
     transition: var(--transition);
+    background-color: #fff;
+    color: var(--color-text);
 }
 
 .formulario input:focus,
 .formulario select:focus {
     outline: none;
-    border-color: var(--color-accent);
-    box-shadow: 0 0 8px rgba(255, 255, 0, 0.4);
-    background-color: rgba(255, 255, 0, 0.05);
+    border-color: var(--color-dark);
+    box-shadow: 0 0 8px rgba(7, 1, 22, 0.2);
+    background-color: rgba(7, 1, 22, 0.02);
 }
 
 .formulario button {
-    background-color: var(--color-accent);
-    color: var(--color-text);
+    background-color: var(--color-dark);
+    color: var(--color-light);
     padding: 14px 30px;
     border: none;
     border-radius: var(--border-radius);
@@ -333,13 +348,13 @@ body {
     font-weight: bold;
     font-size: 15px;
     transition: var(--transition);
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .formulario button:hover {
-    background-color: #e6e600;
+    background-color: rgba(7, 1, 22, 0.85);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 255, 0, 0.4);
+    box-shadow: 0 6px 20px rgba(7, 1, 22, 0.25);
 }
 
 
@@ -402,17 +417,21 @@ body {
 .texto-sobre {
     flex: 1;
     min-width: 300px;
+    background: var(--color-dark);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .texto-sobre h1 {
-    color: var(--color-accent);
+    color: #f5f0e6;
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .texto-sobre h2 {
-    color: var(--color-accent);
+    color: #d4af37;
     font-size: 18px;
     margin-top: 25px;
     margin-bottom: 12px;
@@ -423,7 +442,7 @@ body {
 .texto-sobre p {
     line-height: 1.8;
     text-align: justify;
-    color: var(--color-text);
+    color: #e0e0e0;
     margin-bottom: 15px;
     font-size: 15px;
 }
@@ -450,18 +469,18 @@ body {
 
 .servicos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     margin-bottom: 40px;
 }
 
 .servico {
-    background: linear-gradient(135deg, var(--color-grey), rgba(183, 181, 181, 0.25));
+    background: var(--color-light);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
-    border-left: 4px solid var(--color-accent);
+    border-left: 4px solid var(--color-dark);
     display: flex;
     flex-direction: column;
 }
@@ -469,19 +488,18 @@ body {
 .servico:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(135deg, rgba(255, 255, 0, 0.05), rgba(183, 181, 181, 0.35));
+    background: linear-gradient(135deg, rgba(7, 1, 22, 0.02), rgba(7, 1, 22, 0.05));
 }
 
 .servico h2 {
-    color: var(--color-text);
+    color: var(--color-dark);
     font-size: 18px;
     margin-bottom: 15px;
     font-weight: bold;
-    color: var(--color-accent);
 }
 
 .servico p {
-    color: var(--color-text);
+    color: #333;
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 20px;
@@ -490,8 +508,8 @@ body {
 
 .servico button {
     align-self: flex-start;
-    background-color: var(--color-accent);
-    color: var(--color-text);
+    background-color: var(--color-dark);
+    color: var(--color-light);
     padding: 12px 25px;
     border: none;
     border-radius: var(--border-radius);
@@ -502,9 +520,9 @@ body {
 }
 
 .servico button:hover {
-    background-color: #e6e600;
+    background-color: rgba(7, 1, 22, 0.8);
     transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(255, 255, 0, 0.4);
+    box-shadow: 0 6px 15px rgba(7, 1, 22, 0.3);
 }
 
 .servico a {
@@ -655,21 +673,23 @@ body {
     padding: 50px 20px;
     max-width: 1400px;
     margin: 0 auto;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .info-contacto {
     flex: 1;
     min-width: 300px;
-    background: linear-gradient(135deg, var(--color-grey), rgba(183, 181, 181, 0.25));
-    padding: 35px;
+    background: var(--color-dark);
+    padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid var(--color-accent);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .info-contacto h2 {
-    color: var(--color-accent);
+    color: #f5f0e6;
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 12px;
@@ -678,7 +698,7 @@ body {
 }
 
 .info-contacto p {
-    color: var(--color-text);
+    color: #e0e0e0;
     line-height: 1.8;
     margin-bottom: 15px;
 }
