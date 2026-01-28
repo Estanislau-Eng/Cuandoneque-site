@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <meta name="description" content="Portfólio de projetos realizados pela EEC Technology - websites, sistemas e aplicações">
+    <title>Portfólio - EEC Technology</title>
 
-    <link rel="stylesheet" href="../estilos/portfolio.css">
-    <link rel="stylesheet" href="../estilos/estilo.css">
+    <link rel="stylesheet" href="../src/assets/css/main.css">
+    <link rel="stylesheet" href="../src/assets/css/mobile.css">
+    <script type="module" src="../src/assets/js/app.js" defer></script>
 </head>
 
 <body>
 
     <nav class="navegacao">
-        <div class="menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir/Fechar menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu" id="menu">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="./serviços.html">SERVIÇOS</a></li>
@@ -32,38 +39,38 @@
     <section class="portfolio">
 
         <div class="projeto">
-            <img src="../imagens/pexels-mikael-blomkvist-6476595.jpg" alt="">
+            <img src="../imagens/pexels-mikael-blomkvist-6476595.jpg" alt="Website institucional - projeto EEC Technology">
             <h3>Website Institucional</h3>
             <p>Criação de site profissional para empresa de Tecnologia</p>
         </div>
 
         <div class="projeto">
-            <img src="../imagens/pexels-marcus-aurelius-4064176.jpg" alt="">
+            <img src="../imagens/pexels-marcus-aurelius-4064176.jpg" alt="Sistema de Gestão - projeto EEC Technology">
             <h3>Sistema de Gestão</h3>
             <p>Desenvolvimento de sistema para controle administrativo</p>
         </div>
 
         <div class="projeto">
-            <img src="../imagens/pexels-pixabay-147413.jpg" alt="">
+            <img src="../imagens/pexels-pixabay-147413.jpg" alt="App Mobile - projeto EEC Technology">
             <h3>App Mobile</h3>
             <p>Aplicativo multiplataforma para serviços digitais</p>
         </div>
 
         <div class="projeto">
-            <img src="../imagens/pexels-vlada-karpovich-4050388.jpg" alt="">
+            <img src="../imagens/pexels-vlada-karpovich-4050388.jpg" alt="Marketing Digital - projeto EEC Technology">
             <h3>Marketing Digital</h3>
             <p>Promovemos a Página de Futebol TSDM que hoje é uma referência em Angola nas notícias de futeboll</p>
         </div>
 
         <div class="projeto">
-            <img src="../imagens/pexels-mikhail-nilov-6612284.jpg" alt="">
+            <img src="../imagens/pexels-mikhail-nilov-6612284.jpg" alt="Loja Virtual ALibaba - projeto EEC Technology">
             <h3>Loja Virtual</h3>
             <p>Criamos o e-commerce ALibaba, uma das grandes refências de lojas virtuais, podendo solicitar produtos directamente de fora de Angola
             </p>
         </div>
 
         <div class="projeto">
-            <img src="../imagens/pexels-liza-summer-6347954.jpg" alt="">
+            <img src="../imagens/pexels-liza-summer-6347954.jpg" alt="Design Gráfico - projeto EEC Technology">
             <h3>Design Gráfico</h3>
             <p>Criamos Flyers, cartão de visita, banners, lotipo e identidsde visual completa para diversas marcas, como, Laumar-tec, Engenheiro Cuandoneque, Cassova Goods, e HMM solutions.
             </p>
@@ -71,8 +78,7 @@
     </section>
     <div class="whatsapp-solicitacao">
         <p>Solicitar Serviço</p>
-        <a href="https://wa.me/244955007004" target="_blank"><img src="../imagens/images (2).jpeg" alt="">
-        </a>
+        <a href="https://wa.me/244955007004" target="_blank" aria-label="Contacte-nos via WhatsApp"><img src="../imagens/images (2).jpeg" alt="Abrir WhatsApp"></a>
     </div>
 
 

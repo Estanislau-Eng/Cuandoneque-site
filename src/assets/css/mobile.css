@@ -1,0 +1,265 @@
+/* ========================================
+   RESPONSIVIDADE MOBILE
+   ======================================== */
+
+
+/* Tablets e dispositivos menores que 768px */
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .menu {
+        position: fixed;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        background-color: rgba(7, 1, 22, 0.998);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        border-radius: 8px;
+        z-index: 999;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    .menu.active {
+        max-height: 300px;
+    }
+    .menu ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+        margin: 0;
+    }
+    .menu li {
+        width: 100%;
+    }
+    .menu a {
+        display: block;
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+    }
+    .menu a:hover {
+        background-color: rgba(255, 255, 0, 0.1);
+        transform: none !important;
+    }
+    .conteudo {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .imagem img {
+        max-width: 100%;
+        height: auto;
+    }
+    .part2 {
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .part2 h1 {
+        font-size: 20px;
+    }
+    .part2 p {
+        font-size: 14px;
+    }
+    .conteudo1 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .blc1,
+    .blc2 {
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .sobre-nos {
+        flex-direction: column;
+    }
+    .img-sobre {
+        width: 100%;
+    }
+    .img-sobre img {
+        max-width: 100%;
+        height: auto;
+    }
+    .texto-sobre {
+        width: 100%;
+        padding: 15px;
+    }
+    .texto-sobre h1 {
+        font-size: 20px;
+    }
+    .texto-sobre h2 {
+        font-size: 16px;
+    }
+    .texto-sobre p {
+        font-size: 13px;
+    }
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+    .servico {
+        padding: 15px;
+    }
+    .servico h2 {
+        font-size: 16px;
+    }
+    .servico p {
+        font-size: 13px;
+    }
+    .portfolio {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .projeto img {
+        height: 200px;
+    }
+    .topo {
+        padding: 30px 15px;
+    }
+    .topo h1 {
+        font-size: 24px;
+    }
+    .topo p {
+        font-size: 14px;
+    }
+    .contacto {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .info-contacto {
+        max-width: 100%;
+    }
+    .formulario {
+        max-width: 100%;
+    }
+    .formulario input,
+    .formulario select,
+    .formulario button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .redes-sociais a img {
+        width: 40px;
+    }
+    .whatsapp-solicitacao {
+        margin: 20px 0;
+    }
+    .whatsapp-solicitacao img {
+        width: 50px;
+    }
+    .rodape {
+        padding: 15px 0;
+        font-size: 12px;
+    }
+    body {
+        font-size: 12px;
+    }
+}
+
+
+/* Celulares e dispositivos menores que 480px */
+
+@media (max-width: 480px) {
+    .navegacao {
+        padding: 0 10px;
+    }
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .navegacao a {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+    .part2 {
+        padding: 15px;
+    }
+    .part2 h1 {
+        font-size: 18px;
+    }
+    .part2 p {
+        font-size: 12px;
+    }
+    .blc1,
+    .blc2 {
+        padding: 15px;
+    }
+    .blc1 h2,
+    .blc2 h2 {
+        font-size: 16px;
+    }
+    .formulario input,
+    .formulario select,
+    .formulario button {
+        font-size: 12px;
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+    .servico {
+        padding: 10px;
+    }
+    .servico h2 {
+        font-size: 14px;
+    }
+    .servico p {
+        font-size: 12px;
+    }
+    .servico button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    .texto-sobre h1 {
+        font-size: 18px;
+    }
+    .texto-sobre h2 {
+        font-size: 14px;
+    }
+    .texto-sobre p {
+        font-size: 12px;
+    }
+    .portfolio {
+        gap: 10px;
+    }
+    .projeto img {
+        height: 150px;
+    }
+    .projeto h3 {
+        font-size: 14px;
+    }
+    .projeto p {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .topo h1 {
+        font-size: 18px;
+    }
+    .topo p {
+        font-size: 12px;
+    }
+    .redes-sociais {
+        gap: 10px;
+    }
+    .redes-sociais a img {
+        width: 35px;
+    }
+    .whatsapp-solicitacao img {
+        width: 40px;
+    }
+    .info-contacto h2 {
+        font-size: 16px;
+    }
+    .info-contacto p {
+        font-size: 13px;
+    }
+    .conteudo button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}

@@ -7,15 +7,20 @@
     <meta name="description" content="Entre em contacto conosco para solicitar nossos serviços de tecnologia">
     <title>Contactos - EEC Technology</title>
 
-    <link rel="stylesheet" href="../estilos/estilo.css">
-    <link rel="stylesheet" href="../estilos/contacto.css">
-    <link rel="stylesheet" href="../estilos/mobile.css">
+    <link rel="stylesheet" href="../src/assets/css/main.css">
+    <link rel="stylesheet" href="../src/assets/css/mobile.css">
+    <script type="module" src="../src/assets/js/app.js" defer></script>
 </head>
 
 <body>
 
     <nav class="navegacao">
-        <div class="menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir/Fechar menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu" id="menu">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="./serviços.html">SERVIÇOS</a></li>
@@ -36,13 +41,13 @@
 
             <div class="redes-sociais">
 
-                <a href="https://facebook.com/" target="_blank"><img src="../imagens/images.png" alt=""></a>
+                <a href="https://facebook.com/" target="_blank" aria-label="Visite nossa página no Facebook"><img src="../imagens/images.png" alt="Facebook EEC Technology"></a>
 
 
-                <a href="https://facebook.com/" target="_blank"><img src="../imagens/images (3).jpeg" alt=""></a>
+                <a href="https://instagram.com/" target="_blank" aria-label="Visite nossa página no Instagram"><img src="../imagens/images (3).jpeg" alt="Instagram EEC Technology"></a>
 
 
-                <a href="https://wa.me/244955007004" target="_blank"><img src="../imagens/images (2).jpeg" alt=""></a>
+                <a href="https://wa.me/244955007004" target="_blank" aria-label="Contacte-nos via WhatsApp"><img src="../imagens/images (2).jpeg" alt="WhatsApp EEC Technology"></a>
 
             </div>
         </section>

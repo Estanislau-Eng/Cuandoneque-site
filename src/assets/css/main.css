@@ -1,0 +1,542 @@
+/* ========================================
+   EEC TECHNOLOGY - ESTILOS PRINCIPAIS
+   ======================================== */
+
+
+/* ========================================
+   1. RESET E VARIAVEIS GLOBAIS
+   ======================================== */
+
+:root {
+    --color-dark: rgba(7, 1, 22, 0.998);
+    --color-light: #fff;
+    --color-accent: #ffff00;
+    --color-grey: rgba(183, 181, 181, 0.377);
+    --color-text: rgb(7, 1, 22);
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: var(--color-light);
+    color: var(--color-text);
+    font: 12pt normal arial, sans-serif;
+    padding: 0;
+    flex: 1;
+}
+
+
+/* ========================================
+   2. NAVEGAÇÃO
+   ======================================== */
+
+.navegacao {
+    background-color: var(--color-dark);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacao a {
+    background-color: transparent;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--color-light);
+    transition: var(--transition);
+}
+
+.navegacao a:hover {
+    color: var(--color-accent);
+    transform: scale(1.05);
+}
+
+
+/* Menu Hamburger */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    gap: 5px;
+    position: absolute;
+    right: 20px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-light);
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+
+/* ========================================
+   3. CONTEÚDO PRINCIPAL
+   ======================================== */
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 20px;
+    border: var(--color-text) 20px;
+}
+
+.imagem img {
+    max-width: 900px;
+    height: 350px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.part2 {
+    background-color: var(--color-dark);
+    padding: 30px;
+    font-family: arial, sans-serif;
+    color: var(--color-light);
+    max-width: 600px;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+.part2 h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--color-accent);
+}
+
+.part2 p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 10px;
+    color: var(--color-light);
+}
+
+.part2 b {
+    color: var(--color-accent);
+}
+
+
+/* ========================================
+   4. SEÇÕES DE CONTEÚDO
+   ======================================== */
+
+.conteudo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: var(--color-text) 20px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.blc1,
+.blc2 {
+    background-color: var(--color-grey);
+    padding: 30px;
+    font-family: arial, sans-serif;
+    color: var(--color-text);
+    max-width: 420px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.blc1 h2,
+.blc2 h2 {
+    color: var(--color-text);
+    margin-top: 0;
+}
+
+.blc1 p,
+.blc2 p {
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   5. BOTÕES
+   ======================================== */
+
+.conteudo button,
+.formulario button {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.conteudo button:hover,
+.formulario button:hover {
+    background-color: #e6e600;
+    transform: scale(1.05);
+    box-shadow: var(--shadow);
+}
+
+
+/* ========================================
+   6. FORMULÁRIO
+   ======================================== */
+
+.formulario {
+    max-width: 500px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input,
+.formulario select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+}
+
+
+/* ========================================
+   7. RODAPÉ
+   ======================================== */
+
+.rodape {
+    padding-bottom: 0;
+    width: 100%;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1000;
+    margin-top: auto;
+    border-top: 2px solid var(--color-accent);
+}
+
+.rodape p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   8. SOBRE NÓS
+   ======================================== */
+
+.sobre-nos {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    align-items: center;
+}
+
+.img-sobre {
+    flex: 1;
+}
+
+.img-sobre img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.texto-sobre {
+    flex: 1;
+}
+
+.texto-sobre h1 {
+    color: var(--color-accent);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.texto-sobre h2 {
+    color: var(--color-text);
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.texto-sobre p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* ========================================
+   9. SERVIÇOS
+   ======================================== */
+
+.servicos-container {
+    padding: 40px 20px;
+}
+
+.servicos-container h1 {
+    text-align: center;
+    color: var(--color-accent);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servico {
+    background-color: var(--color-grey);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.servico h2 {
+    color: var(--color-text);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.servico p {
+    color: var(--color-text);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.servico button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.servico a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+
+/* ========================================
+   10. PORTFÓLIO
+   ======================================== */
+
+.topo {
+    background: linear-gradient(135deg, var(--color-dark), rgba(7, 1, 22, 0.8));
+    color: var(--color-light);
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.topo h1 {
+    font-size: 32px;
+    margin: 0;
+    color: var(--color-accent);
+}
+
+.topo p {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.projeto {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projeto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.projeto h3 {
+    background-color: var(--color-dark);
+    color: var(--color-accent);
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.projeto p {
+    background-color: var(--color-light);
+    color: var(--color-text);
+    margin: 0;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   11. REDES SOCIAIS
+   ======================================== */
+
+.redes-sociais {
+    text-align: center;
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.redes-sociais a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociais a img {
+    width: 50px;
+    height: 50px;
+    transition: var(--transition);
+    border-radius: 50%;
+}
+
+.redes-sociais a img:hover {
+    transform: scale(1.2);
+}
+
+.redes-sociais a:hover {
+    color: var(--color-accent);
+}
+
+
+/* ========================================
+   12. WHATSAPP
+   ======================================== */
+
+.whatsapp-solicitacao {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.whatsapp-solicitacao p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.whatsapp-solicitacao img {
+    width: 60px;
+    height: auto;
+    transition: var(--transition);
+}
+
+.whatsapp-solicitacao img:hover {
+    transform: scale(1.2);
+}
+
+
+/* ========================================
+   13. CONTACTO
+   ======================================== */
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.info-contacto {
+    max-width: 400px;
+}
+
+.info-contacto h2 {
+    color: var(--color-text);
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.info-contacto p {
+    color: var(--color-text);
+    line-height: 1.6;
+}

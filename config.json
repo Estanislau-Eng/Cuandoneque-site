@@ -1,0 +1,35 @@
+{
+    "project": {
+        "name": "EEC Technology Website",
+        "version": "2.0",
+        "description": "Website da EEC Technology com arquitetura MVC",
+        "author": "EEC Technology",
+        "license": "MIT"
+    },
+    "build": {
+        "entry": "src/assets/js/app.js",
+        "output": "dist",
+        "sourceMap": true,
+        "minify": true
+    },
+    "server": {
+        "port": 3000,
+        "host": "localhost",
+        "watch": true
+    },
+    "paths": {
+        "models": "src/models",
+        "controllers": "src/controllers",
+        "views": "src/views",
+        "assets": "src/assets",
+        "utils": "src/utils"
+    },
+    "api": {
+        "baseUrl": "http://localhost:3001",
+        "endpoints": {
+            "contact": "/api/contact",
+            "services": "/api/services",
+            "projects": "/api/projects"
+        }
+    }
+}

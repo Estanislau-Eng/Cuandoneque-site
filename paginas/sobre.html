@@ -7,14 +7,19 @@
     <meta name="description" content="Conheça a EEC Technology, uma empresa dedicada a soluções tecnológicas inovadoras">
     <title>Sobre Nós - EEC Technology</title>
 
-    <link rel="stylesheet" href="../estilos/estilo.css">
-    <link rel="stylesheet" href="../estilos/sobrenos.css">
-    <link rel="stylesheet" href="../estilos/mobile.css">
+    <link rel="stylesheet" href="../src/assets/css/main.css">
+    <link rel="stylesheet" href="../src/assets/css/mobile.css">
+    <script type="module" src="../src/assets/js/app.js" defer></script>
 </head>
 
 <body>
     <nav class="navegacao">
-        <div class="menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir/Fechar menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu" id="menu">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="./serviços.html">SERVIÇOS</a></li>

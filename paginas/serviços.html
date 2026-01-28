@@ -7,15 +7,20 @@
     <meta name="description" content="Conheça os serviços da EEC Technology: desenvolvimento web, design, marketing digital e muito mais">
     <title>Serviços - EEC Technology</title>
 
-    <link rel="stylesheet" href="../estilos/estilo.css">
-    <link rel="stylesheet" href="../estilos/servico.css">
-    <link rel="stylesheet" href="../estilos/mobile.css">
+    <link rel="stylesheet" href="../src/assets/css/main.css">
+    <link rel="stylesheet" href="../src/assets/css/mobile.css">
+    <script type="module" src="../src/assets/js/app.js" defer></script>
 </head>
 
 <body>
 
     <nav class="navegacao">
-        <div class="menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir/Fechar menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu" id="menu">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="./serviços.html">SERVIÇOS</a></li>
@@ -69,7 +74,7 @@
 
         <div class="whatsapp-solicitacao">
             <p>Solicitar Serviço</p>
-            <a href="https://wa.me/244955007004" target="_blank"><img src="../imagens/images (2).jpeg" alt="">
+            <a href="https://wa.me/244955007004" target="_blank" aria-label="Contacte-nos via WhatsApp para solicitar serviço"><img src="../imagens/images (2).jpeg" alt="Abrir WhatsApp"></a>
             </a>
         </div>
 
