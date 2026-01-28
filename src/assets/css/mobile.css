@@ -48,33 +48,36 @@
     }
     .conteudo {
         flex-direction: column;
-        padding: 10px;
+        gap: 30px;
+        padding: 20px;
     }
+
     .imagem img {
         max-width: 100%;
         height: auto;
     }
+
     .part2 {
-        max-width: 100%;
-        height: auto;
-        padding: 20px;
+        padding: 25px;
     }
+
     .part2 h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
+
     .part2 p {
         font-size: 14px;
     }
+
     .conteudo1 {
         flex-direction: column;
         gap: 20px;
-        padding: 10px;
+        padding: 20px;
         border-radius: 10px;
     }
+
     .blc1,
     .blc2 {
-        max-width: 100%;
-        height: auto;
         padding: 20px;
     }
     .sobre-nos {
@@ -91,26 +94,40 @@
         width: 100%;
         padding: 15px;
     }
+
     .texto-sobre h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
+
     .texto-sobre h2 {
         font-size: 16px;
     }
+
     .texto-sobre p {
         font-size: 13px;
     }
+
     .servicos-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
+
     .servico {
-        padding: 15px;
+        padding: 20px;
     }
+
     .servico h2 {
         font-size: 16px;
     }
+
     .servico p {
         font-size: 13px;
+    }
+
+    .servico button {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 12px;
     }
     .portfolio {
         grid-template-columns: 1fr;
@@ -130,20 +147,29 @@
     }
     .contacto {
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
         padding: 20px;
     }
+
     .info-contacto {
-        max-width: 100%;
+        width: 100%;
+        padding: 20px;
     }
+
     .formulario {
-        max-width: 100%;
+        width: 100%;
+        padding: 20px;
     }
+
+    .formulario h2 {
+        font-size: 18px;
+    }
+
     .formulario input,
     .formulario select,
     .formulario button {
         font-size: 14px;
-        padding: 8px;
+        padding: 10px;
     }
     .redes-sociais a img {
         width: 40px;
