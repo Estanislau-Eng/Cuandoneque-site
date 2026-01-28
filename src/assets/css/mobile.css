@@ -8,31 +8,24 @@
 @media (max-width: 768px) {
     .navegacao {
         padding: 20px;
+        justify-content: center;
     }
-    .menu-toggle {
-        display: flex;
-        z-index: 10000;
-        pointer-events: auto;
-    }
+    /* Menu sempre visível, sem toggle */
     .menu {
-        position: fixed;
-        top: 60px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        max-width: 400px;
-        background-color: rgba(7, 1, 22, 0.998);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        border-radius: 8px;
-        z-index: 9999;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        pointer-events: none;
-    }
-    .menu.active {
-        max-height: 500px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        background-color: var(--color-dark);
+        max-height: none;
+        overflow: visible;
+        border-radius: 0;
+        box-shadow: none;
         pointer-events: auto;
+        display: flex;
+        justify-content: center;
     }
     .menu ul {
         flex-direction: column;
@@ -46,8 +39,8 @@
     .menu a {
         display: block;
         padding: 15px 20px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     .menu a:hover {
         background-color: rgba(255, 255, 0, 0.1);
