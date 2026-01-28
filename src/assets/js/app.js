@@ -23,8 +23,10 @@ class App {
         // Inicializa todos os controllers
         this.controllers.forEach(controller => {
             try {
-                controller.init();
-                console.log(`[SUCCESS] ${controller.constructor.name} inicializado`);
+                if (controller.init && typeof controller.init === 'function') {
+                    controller.init();
+                    console.log(`[SUCCESS] Controller inicializado`);
+                }
             } catch (error) {
                 console.error(`[ERROR] Erro ao inicializar controller:`, error);
             }

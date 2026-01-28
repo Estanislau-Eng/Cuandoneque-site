@@ -14,11 +14,19 @@ const NavigationController = {
         const menuToggle = document.getElementById('menuToggle');
         const menu = document.getElementById('menu');
 
+        console.log('[DEBUG] setupMenuToggle - menuToggle:', menuToggle);
+        console.log('[DEBUG] setupMenuToggle - menu:', menu);
+
         if (menuToggle && menu) {
             menuToggle.addEventListener('click', () => {
+                console.log('[DEBUG] Menu toggle clicado');
                 menuToggle.classList.toggle('active');
                 menu.classList.toggle('active');
+                console.log('[DEBUG] Classes atualizadas - toggle active:', menuToggle.classList.contains('active'));
+                console.log('[DEBUG] Classes atualizadas - menu active:', menu.classList.contains('active'));
             });
+        } else {
+            console.error('[ERROR] menuToggle ou menu não encontrado');
         }
     },
 
