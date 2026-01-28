@@ -8,6 +8,7 @@
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
+        z-index: 1001;
     }
     .menu {
         position: fixed;
@@ -51,9 +52,16 @@
         gap: 30px;
         padding: 20px;
     }
+    .imagem {
+        max-height: none;
+    }
     .imagem img {
         max-width: 100%;
         height: auto;
+        transform: scale(1) !important;
+    }
+    .apresent {
+        max-height: none;
     }
     .part2 {
         padding: 25px;
