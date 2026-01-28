@@ -34,7 +34,10 @@
     <main class="contacto">
         <section class="info-contacto">
             <h2>Endereço</h2>
-            <p> Luanda, Avenida Fidel de Castro, <br>Rua do Prenda </p>
+            <p> Luanda, Vila de Viana</p>
+
+            <h2>Email:</h2>
+            <p>engenheirocuandoneque@gmail.com</p>
 
             <h2>Contactos:</h2>
             <p>938-352-203 / 955-007-004</p>
@@ -56,29 +59,36 @@
             <h2>Solicitar Serviço</h2>
 
             <form action="#" method="post" class="formulario">
-                <Label for="nome">Nome:</Label><br>
-                <input type="text" id="nome" placeholder="seu nome" required><br>
+                <div>
+                    <Label for="nome">Nome:</Label>
+                    <input type="text" id="nome" placeholder="seu nome" required>
+                </div>
 
-                <label for="telefone">Telefone:</label><br>
-                <input type="tel" name="" id="telefone" placeholder="xxx-xxx-xxx" required><br>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" placeholder="xxx-xxx-xxx" required>
+                </div>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" placeholder="xxx@gmail.com" required><br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="xxx@gmail.com" required>
+                </div>
 
-                <label for="servio">Tipo de Serviço:</label><br>
-                <Select name="servio" required>
-                    <option value="Sistema de Gestão">Sistema de Gestão</option>
-                    <option value="Design">Design Gráfico</option>
-                    <option value="consultoria">Consultoria Tecnológica</option>
-                    <option value="mark">Marketing Digital</option>
-                    <option value="site">Criação de Site Institucional</option>
-                </Select>
+                <div>
+                    <label for="servio">Tipo de Serviço:</label>
+                    <Select id="servio" name="servio" required>
+                        <option value="Sistema de Gestão">Sistema de Gestão</option>
+                        <option value="Design">Design Gráfico</option>
+                        <option value="consultoria">Consultoria Tecnológica</option>
+                        <option value="mark">Marketing Digital</option>
+                        <option value="site">Criação de Site Institucional</option>
+                    </Select>
+                </div>
 
-                <button type="submit"> Enviar </button>
-                <button type="reset"> Limpar </button>
-
-
-
+                <div class="form-buttons">
+                    <button type="submit"> Enviar </button>
+                    <button type="reset"> Limpar </button>
+                </div>
             </form>
         </section>
     </main>
