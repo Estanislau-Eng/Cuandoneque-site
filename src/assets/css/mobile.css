@@ -51,6 +51,7 @@
         flex-direction: column;
         gap: 30px;
         padding: 20px;
+        margin-top: 80px;
     }
     .imagem {
         max-height: none;
