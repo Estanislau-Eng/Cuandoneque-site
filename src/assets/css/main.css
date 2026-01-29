@@ -725,3 +725,8 @@ body {
     line-height: 1.8;
     margin-bottom: 15px;
 }
+
+.numero {
+    text-decoration: none;
+    color: rgba(14, 13, 13, 0.76);
+}
