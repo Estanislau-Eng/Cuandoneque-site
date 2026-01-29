@@ -1,43 +1,27 @@
-/**
- * App Principal
- * Integra todos os controllers, models e views
- */
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menuToggle");
+    const menu = document.querySelector(".menu");
 
-// Import Controllers
-import NavigationController from '../controllers/navigationController.js';
-import FormController from '../controllers/formController.js';
-import UIController from '../controllers/uiController.js';
+    if (!menuToggle || !menu) return;
 
-class App {
-    constructor() {
-        this.controllers = [
-            NavigationController,
-            FormController,
-            UIController
-        ];
-    }
+    menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        menu.classList.toggle("active");
+    });
 
-    init() {
-        console.log('[INFO] Inicializando EEC Technology...');
-
-        // Inicializa todos os controllers
-        this.controllers.forEach(controller => {
-            try {
-                if (controller.init && typeof controller.init === 'function') {
-                    controller.init();
-                    console.log(`[SUCCESS] Controller inicializado`);
-                }
-            } catch (error) {
-                console.error(`[ERROR] Erro ao inicializar controller:`, error);
-            }
+    // Fecha o menu ao clicar em um link (mobile)
+    document.querySelectorAll(".menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            menuToggle.classList.remove("active");
+            menu.classList.remove("active");
         });
+    });
 
-        console.log('[SUCCESS] Aplicação iniciada com sucesso!');
-    }
-}
-
-// Inicializa a aplicação quando o DOM estiver pronto
-document.addEventListener('DOMContentLoaded', () => {
-    const app = new App();
-    app.init();
+    // Ajusta ao redimensionar a tela
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            menu.classList.remove("active");
+            menuToggle.classList.remove("active");
+        }
+    });
 });
