@@ -157,4 +157,36 @@
         font-size: 11px;
         padding: 10px 0;
     }
+    /* PÁGINAS DE SERVIÇO DETALHADO */
+    .servico-detalhes {
+        padding: 20px 10px;
+    }
+    .servico-header {
+        max-height: 250px;
+        margin-bottom: 20px;
+    }
+    .servico-conteudo {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .servico-conteudo h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .servico-info h2 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .servico-info p {
+        font-size: 14px;
+    }
+    .features-list li {
+        padding: 12px;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .servico-cta button {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
 }
